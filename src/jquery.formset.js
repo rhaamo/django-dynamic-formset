@@ -142,10 +142,8 @@
             }
             if (hasChildElements(row)) {
                 row.addClass(options.formCssClass);
-                if (row.is(':visible')) {
-                    insertDeleteLink(row);
-                    applyExtraClasses(row, i);
-                }
+                insertDeleteLink(row);
+                applyExtraClasses(row, i);
             }
         });
 
